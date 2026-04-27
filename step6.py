@@ -3,6 +3,9 @@ import time
 
 root = tk.Tk()
 root.overrideredirect(True)
+root.attributes("-topmost", True)
+root.configure(bg='grey')
+
 label = tk.Label(root, text="0", font = ("Arial", 30))
 label.pack()
 
