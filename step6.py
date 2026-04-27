@@ -9,7 +9,7 @@ entry = tk.Entry(root)
 entry.pack()
 
 def Start():
-    sec = int(entry.grt())
+    sec = int(entry.get())
     end_time = time.time() + sec
     def update():
         remain = int(end_time - time.time() + 1)
@@ -23,3 +23,5 @@ def Start():
 
 button = tk.Button(root, text = "Start", command = Start)
 button.pack()
+
+root.mainloop()
