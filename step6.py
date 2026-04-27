@@ -2,6 +2,7 @@ import tkinter as tk
 import time
 
 root = tk.Tk()
+root.overrideredriect(True)
 label = tk.Label(root, text="0", font = ("Arial", 30))
 label.pack()
 
